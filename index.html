@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Đăng ký Đại sứ Vườn Game Học Vietwise</title>
+<meta name="description" content="15 phút mỗi ngày, gieo 15 giá trị, trước 15 tuổi. Từ 25/11 đến 25/12/2026, các gia đình đại sứ cùng con chơi game-học miễn phí trên vietwise.edu.vn.">
+<meta property="og:title" content="Đăng ký Đại sứ Vườn Game Học Vietwise">
+<meta property="og:description" content="15 phút mỗi ngày, gieo 15 giá trị, trước 15 tuổi. Từ 25/11 đến 25/12/2026, các gia đình đại sứ cùng con chơi game-học miễn phí trên vietwise.edu.vn.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kynam8x.github.io/dai-su-vuon-game-hoc/">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Paytone+One&display=swap">
+<style>
+/* Layout: một cột hẹp dễ điền trên điện thoại; dải đầu xanh vườn có khẩu hiệu 15-15-15; bốn phần đánh số vì là thứ tự điền thật */
+:root{
+  --bg:#f6f8ee; --card:#ffffff; --ink:#1b2a16; --muted:#5d6b55; --line:#dfe6d2;
+  --leaf:#2f7d22; --leaf-soft:#e7f2df; --sun:#F9C12D; --navy:#00004F; --err:#c0272d;
+  --head:#2f7d22; --head-ink:#ffffff;
+  --display:"Paytone One","Be Vietnam Pro",system-ui,sans-serif;
+  --body:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f160d; --card:#172114; --ink:#eef3e8; --muted:#a7b59d; --line:#2c3a26;
+  --leaf:#7ccf62; --leaf-soft:#1f3019; --sun:#F9C12D; --navy:#c9ccff; --err:#ff7a7f;
+  --head:#173d10; --head-ink:#ffffff; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f160d; --card:#172114; --ink:#eef3e8; --muted:#a7b59d; --line:#2c3a26;
+  --leaf:#7ccf62; --leaf-soft:#1f3019; --sun:#F9C12D; --navy:#c9ccff; --err:#ff7a7f;
+  --head:#173d10; --head-ink:#ffffff; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55}
+.wrap{max-width:680px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{background:var(--head);color:var(--head-ink);padding-block:28px 26px;border-bottom:6px solid var(--sun)}
+.brand{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--sun)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(28px,7vw,40px);line-height:1.12;margin:.25em 0 .35em;text-wrap:balance}
+.slogan{font-size:17px;font-weight:600;margin:0}
+.slogan b{color:var(--sun);font-weight:700}
+.intro{margin:12px 0 0;opacity:.94;font-size:15px}
+.preview{background:#fff6d6;color:#5b4300;border:1px solid #f0d27a;border-radius:10px;padding:10px 14px;font-size:14px;margin-top:16px}
+main{padding-block:18px 48px;display:grid;gap:16px}
+section.part{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 8px}
+.part h2{display:flex;align-items:center;gap:10px;font-size:18px;margin:0 0 12px}
+.part h2 span{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--leaf);color:#fff;font-size:14px;flex:none}
+.f{margin:0 0 16px}
+.f>label,.f>.q{display:block;font-weight:600;font-size:15px;margin-bottom:6px}
+.req{color:var(--err)}
+.hint{font-size:13px;color:var(--muted);margin:-2px 0 6px}
+input[type=text],input[type=tel],input[type=email],input[type=url],select{width:100%;font:inherit;font-size:16px;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+input:focus,select:focus{outline:2px solid var(--leaf);outline-offset:1px}
+.opts{display:grid;gap:6px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:9px 11px;border:1px solid var(--line);border-radius:10px;cursor:pointer;background:var(--bg)}
+.opt input{margin-top:4px;accent-color:var(--leaf);flex:none;width:18px;height:18px}
+.opt:has(input:checked){border-color:var(--leaf);background:var(--leaf-soft)}
+.opt small{display:block;color:var(--muted);font-size:13px}
+.err{color:var(--err);font-size:13px;margin-top:5px}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:0 0 12px;background:var(--bg);font-size:14px}
+summary{cursor:pointer;font-weight:600;color:var(--leaf)}
+details ol,details ul{padding-left:1.2em;margin:8px 0}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13.5px;margin:8px 0}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:var(--leaf-soft)}
+button.send{font:inherit;font-weight:700;font-size:17px;width:100%;padding:14px;border:0;border-radius:12px;background:var(--leaf);color:#fff;cursor:pointer}
+button.send:disabled{opacity:.6;cursor:wait}
+button.send:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.formerr{color:var(--err);font-weight:600;text-align:center;margin:10px 0 0}
+.done{background:var(--card);border:2px solid var(--leaf);border-radius:14px;padding:22px 20px;text-align:center}
+.done h2{font-family:var(--display);font-weight:400;color:var(--leaf);font-size:26px;margin:0 0 8px}
+.guide{background:var(--card);border:1px dashed var(--muted);border-radius:14px;padding:16px 18px;font-size:14px}
+.guide h2{font-size:17px;margin:0 0 8px}
+.guide code{font-size:.9em;background:var(--leaf-soft);padding:1px 5px;border-radius:4px}
+footer{font-size:13px;color:var(--muted);padding-bottom:28px;text-align:center}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">Siêu thị Vietwise · Vườn Game Học</div>
+  <h1>Đăng ký Đại sứ Vườn Game Học Vietwise</h1>
+  <p class="slogan">15 phút mỗi ngày, gieo <b>15</b> giá trị, trước <b>15</b> tuổi.</p>
+  <p class="intro">Từ thứ Tư 25/11 đến thứ Sáu 25/12/2026, các gia đình đại sứ mỗi ngày ngồi cạnh con 15 phút, cùng chơi một game-học miễn phí trên vietwise.edu.vn, rồi chia sẻ lại khoảnh khắc đó. Điền form khoảng 4 phút.</p>
+</div></header>
+
+<main class="wrap" id="app">
+<form id="frm" novalidate>
+
+<section class="part"><h2><span>1</span>Thông tin gia đình</h2>
+  <div class="f"><label for="name">Họ tên bố, mẹ hoặc người giám hộ <span class="req">*</span></label><input type="text" id="name" name="name" autocomplete="name" maxlength="80" required></div>
+  <div class="f"><div class="q">Quan hệ với bé <span class="req">*</span></div><div class="opts" data-name="relation" data-type="radio">
+    <label class="opt"><input type="radio" name="relation" value="Bố" required>Bố</label>
+    <label class="opt"><input type="radio" name="relation" value="Mẹ">Mẹ</label>
+    <label class="opt"><input type="radio" name="relation" value="Ông">Ông</label>
+    <label class="opt"><input type="radio" name="relation" value="Bà">Bà<small>Ông bà đăng ký thì bố hoặc mẹ của bé đọc và đồng ý ở phần 4.</small></label>
+    <label class="opt"><input type="radio" name="relation" value="Người giám hộ khác">Người giám hộ khác</label></div></div>
+  <div class="f"><label for="phone">Số điện thoại có Zalo <span class="req">*</span></label><p class="hint">Để chị Hường mời nhà mình vào nhóm Zalo đại sứ.</p><input type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel" maxlength="12" placeholder="09xx xxx xxx" required></div>
+  <div class="f"><label for="email">Email</label><p class="hint">Không bắt buộc. Dùng khi Vườn cần gửi mã chơi.</p><input type="email" id="email" name="email" autocomplete="email" maxlength="100"></div>
+  <div class="f"><div class="q">Nhà mình là <span class="req">*</span></div><p class="hint">Chọn được nhiều ô.</p><div class="opts" data-name="who" data-type="checkbox">
+    <label class="opt"><input type="checkbox" name="who" value="Cộng tác viên Siêu thị Vietwise">Cộng tác viên Siêu thị Vietwise</label>
+    <label class="opt"><input type="checkbox" name="who" value="Khách của Siêu thị Vietwise">Khách của Siêu thị Vietwise</label>
+    <label class="opt"><input type="checkbox" name="who" value="Đại sứ Umikai">Từng là đại sứ chương trình Umikai</label>
+    <label class="opt"><input type="checkbox" name="who" value="Thành viên Sống Có Hiếu">Thành viên Sống Có Hiếu</label>
+    <label class="opt"><input type="checkbox" name="who" value="Khác">Khác</label></div></div>
+  <div class="f"><label for="inviter">Ai mời nhà mình biết chương trình</label><p class="hint">Tên người mời, hoặc ghi "tự xem trên Fanpage", "Tivishow".</p><input type="text" id="inviter" name="inviter" maxlength="80"></div>
+  <div class="f"><label for="ctv">Mã cộng tác viên (nếu có)</label><input type="text" id="ctv" name="ctv" maxlength="20"></div>
+</section>
+
+<section class="part"><h2><span>2</span>Về con</h2>
+  <div class="f"><div class="q">Số bé cùng chơi <span class="req">*</span></div><div class="opts" data-name="kids" data-type="radio">
+    <label class="opt"><input type="radio" name="kids" value="1" required>1 bé</label>
+    <label class="opt"><input type="radio" name="kids" value="2">2 bé</label>
+    <label class="opt"><input type="radio" name="kids" value="3">3 bé trở lên</label></div></div>
+  <div class="f"><div class="q">Nhóm tuổi của các bé <span class="req">*</span></div><p class="hint">Chương trình dành cho bé 3 đến 12 tuổi. Form không hỏi tên hay ngày sinh của bé.</p><div class="opts" data-name="ages" data-type="checkbox">
+    <label class="opt"><input type="checkbox" name="ages" value="3 đến 5 tuổi">3 đến 5 tuổi</label>
+    <label class="opt"><input type="checkbox" name="ages" value="6 đến 8 tuổi">6 đến 8 tuổi</label>
+    <label class="opt"><input type="checkbox" name="ages" value="9 đến 12 tuổi">9 đến 12 tuổi</label></div></div>
+  <div class="f"><div class="q">Nhà mình có bé đã đủ 7 tuổi không <span class="req">*</span></div><div class="opts" data-name="over7" data-type="radio">
+    <label class="opt"><input type="radio" name="over7" value="Có" required>Có</label>
+    <label class="opt"><input type="radio" name="over7" value="Không">Không</label></div></div>
+  <div class="f"><div class="q">Nhà mình đã chơi Vườn Game Học chưa <span class="req">*</span></div><div class="opts" data-name="played" data-type="radio">
+    <label class="opt"><input type="radio" name="played" value="Chưa" required>Chưa</label>
+    <label class="opt"><input type="radio" name="played" value="Đã chơi thử miễn phí">Đã chơi thử miễn phí</label>
+    <label class="opt"><input type="radio" name="played" value="Đang có gói thành viên">Đang có gói thành viên</label></div></div>
+  <div class="f"><div class="q">Bé sẽ chơi trên <span class="req">*</span></div><div class="opts" data-name="device" data-type="radio">
+    <label class="opt"><input type="radio" name="device" value="Điện thoại" required>Điện thoại</label>
+    <label class="opt"><input type="radio" name="device" value="Máy tính bảng">Máy tính bảng</label>
+    <label class="opt"><input type="radio" name="device" value="Máy tính">Máy tính</label></div></div>
+</section>
+
+<section class="part"><h2><span>3</span>Nơi nhà mình chia sẻ</h2>
+  <div class="f"><div class="q">Nhà mình sẽ đăng ở đâu <span class="req">*</span></div><p class="hint">Chọn được nhiều ô.</p><div class="opts" data-name="where" data-type="checkbox">
+    <label class="opt"><input type="checkbox" name="where" value="Facebook cá nhân">Facebook cá nhân</label>
+    <label class="opt"><input type="checkbox" name="where" value="Zalo nhật ký">Zalo nhật ký</label>
+    <label class="opt"><input type="checkbox" name="where" value="TikTok">TikTok</label>
+    <label class="opt"><input type="checkbox" name="where" value="Khác">Khác</label></div></div>
+  <div class="f"><label for="profile">Link trang cá nhân sẽ đăng <span class="req">*</span></label><p class="hint">Để chị Hường xem được bài. Bài cần để chế độ công khai.</p><input type="url" id="profile" name="profile" inputmode="url" maxlength="200" placeholder="https://www.facebook.com/..." required></div>
+  <div class="f"><div class="q">Nhà mình chia sẻ bằng cách nào <span class="req">*</span></div><div class="opts" data-name="format" data-type="radio">
+    <label class="opt"><input type="radio" name="format" value="Live lúc chơi cùng con" required>Live lúc chơi cùng con<small>Khoảng 15 phút, tối từ 20:00 đến 21:00.</small></label>
+    <label class="opt"><input type="radio" name="format" value="Quay video ngắn">Quay video ngắn<small>30 đến 60 giây.</small></label>
+    <label class="opt"><input type="radio" name="format" value="Lúc live, lúc video">Lúc live, lúc video</label></div></div>
+  <div class="f"><div class="q">Giờ nhà mình thường chơi cùng con <span class="req">*</span></div><div class="opts" data-name="time" data-type="radio">
+    <label class="opt"><input type="radio" name="time" value="Trước 19:00" required>Trước 19:00</label>
+    <label class="opt"><input type="radio" name="time" value="19:00 đến 21:00">19:00 đến 21:00</label>
+    <label class="opt"><input type="radio" name="time" value="Sau 21:00">Sau 21:00</label></div></div>
+</section>
+
+<section class="part"><h2><span>4</span>Cam kết và đồng ý</h2>
+  <details><summary>Đọc cam kết của đại sứ</summary>
+    <ol>
+      <li>Mỗi ngày ngồi cạnh con khoảng 15 phút, cùng chơi một game-học miễn phí trên vietwise.edu.vn, từ 25/11 đến 25/12/2026.</li>
+      <li>Chia sẻ khoảnh khắc đó bằng một buổi live lúc chơi hoặc một video ngắn, theo sức nhà mình; lỡ ngày nào thì làm bù hôm sau.</li>
+      <li>Mỗi bài có câu công khai mình là đại sứ của chương trình, hashtag và link theo hướng dẫn trong nhóm Zalo; nộp link bài theo hướng dẫn.</li>
+      <li>Kể đúng điều con làm, không hứa con giỏi hơn hay thông minh hơn.</li>
+      <li>Giữ an toàn cho con khi đăng: không ghi họ tên đầy đủ, trường, địa chỉ của con; chỉ để con lên hình theo mức đồng ý nhà mình chọn bên dưới.</li>
+    </ol>
+  </details>
+  <div class="f"><label class="opt"><input type="checkbox" name="commit" value="Đồng ý" required>Tôi đã đọc cam kết của đại sứ và đồng ý. <span class="req">*</span></label></div>
+
+  <details><summary>Đọc văn bản đồng ý dùng hình ảnh, giọng nói của con</summary>
+    <p>Tôi đồng ý cho CÔNG TY TNHH SỐNG CÓ HIẾU (Siêu thị Vietwise, mã số thuế 0318397558) và đơn vị vận hành Vườn Game Học dùng các bài tôi đăng trong chương trình Đại sứ Vườn Game Học 2026, theo mức tôi chọn:</p>
+    <div class="tw"><table><thead><tr><th>Mức</th><th>Bài có thể có</th><th>Không có</th></tr></thead><tbody>
+      <tr><td>A</td><td>Màn hình game, bàn tay của con, giọng bố mẹ, tranh con vẽ</td><td>Mặt con, giọng con</td></tr>
+      <tr><td>B</td><td>Như mức A, thêm giọng nói của con</td><td>Mặt con</td></tr>
+      <tr><td>C</td><td>Như mức B, thêm hình ảnh có mặt con</td><td></td></tr></tbody></table></div>
+    <ul>
+      <li><b>Dùng để:</b> đăng lại, chia sẻ trên Fanpage, Group, Zalo, website của Siêu thị Vietwise và Vườn Game Học; cắt video ngắn; tài liệu hướng dẫn cộng tác viên. Quảng cáo trả tiền chỉ khi tôi chọn "có" bên dưới.</li>
+      <li><b>Không dùng để:</b> ghi họ tên đầy đủ, trường học, địa chỉ của con; bán hoặc đưa hình ảnh, giọng nói của con cho bên khác; sửa lời con nói thành lời khác.</li>
+      <li><b>Thời hạn:</b> đến hết 31/12/2027. Tôi có thể rút đồng ý bất cứ lúc nào bằng cách nhắn Heartline 0934 862 080. Siêu thị gỡ bài đã đăng lại trong 3 ngày làm việc và dừng quảng cáo có hình ảnh của con trong 24 giờ.</li>
+      <li><b>Con từ 7 tuổi:</b> bố mẹ đọc cho con nghe và hỏi con có đồng ý không.</li>
+    </ul>
+  </details>
+  <div class="f"><div class="q">Mức đồng ý <span class="req">*</span></div><div class="opts" data-name="level" data-type="radio">
+    <label class="opt"><input type="radio" name="level" value="Mức A" required>Mức A<small>Không có mặt con, không có giọng con.</small></label>
+    <label class="opt"><input type="radio" name="level" value="Mức B">Mức B<small>Có giọng con, không có mặt con.</small></label>
+    <label class="opt"><input type="radio" name="level" value="Mức C">Mức C<small>Có mặt con và giọng con.</small></label></div></div>
+  <div class="f"><div class="q">Cho phép dùng bài trong quảng cáo trả tiền <span class="req">*</span></div><p class="hint">Chọn "không" vẫn tham gia bình thường.</p><div class="opts" data-name="ads" data-type="radio">
+    <label class="opt"><input type="radio" name="ads" value="Có" required>Có</label>
+    <label class="opt"><input type="radio" name="ads" value="Không">Không</label></div></div>
+  <div class="f" id="kidAgreeBox"><div class="q">Bé từ 7 tuổi: bố mẹ đã đọc văn bản cho bé nghe và bé đồng ý <span class="req">*</span></div><div class="opts" data-name="kidAgree" data-type="radio">
+    <label class="opt"><input type="radio" name="kidAgree" value="Có, bé đồng ý">Có, bé đồng ý</label>
+    <label class="opt"><input type="radio" name="kidAgree" value="Bé chưa đồng ý, nhà dùng mức A">Bé chưa đồng ý, nhà mình dùng mức A</label>
+    <label class="opt"><input type="radio" name="kidAgree" value="Nhà không có bé từ 7 tuổi">Nhà không có bé từ 7 tuổi</label></div></div>
+  <div class="f"><label for="signer">Họ tên người đồng ý (gõ lại như chữ ký) <span class="req">*</span></label><p class="hint">Bố, mẹ hoặc người giám hộ của bé.</p><input type="text" id="signer" name="signer" maxlength="80" required></div>
+  <div class="f"><label class="opt"><input type="checkbox" name="privacy" value="Đồng ý" required>Tôi đồng ý để Siêu thị Vietwise lưu thông tin trên để chạy chương trình này. Nếu nhà mình không tham gia, Siêu thị xóa thông tin sau 31/12/2026; nếu tham gia, thông tin được lưu cùng văn bản đồng ý đến hết 31/12/2027. <span class="req">*</span></label></div>
+</section>
+
+<button class="send" type="submit" id="sendBtn">Gửi đăng ký</button>
+<p class="formerr" id="formErr" hidden></p>
+</form>
+
+<div class="done" id="done" hidden>
+  <h2>Cảm ơn nhà mình!</h2>
+  <p id="doneMsg">Siêu thị Vietwise đã nhận đăng ký. Chị Hường sẽ nhắn Zalo mời nhà mình vào nhóm đại sứ trong 24 giờ.</p>
+  <p>Trong lúc chờ, nhà mình có thể cùng con chơi thử một game miễn phí trên vietwise.edu.vn.</p>
+  <p>Cần hỏi gì, gọi hoặc nhắn Zalo Heartline 0934 862 080.</p>
+</div>
+
+</main>
+
+<footer class="wrap">Siêu thị Vietwise · We Are One – Kinh doanh là phụng sự · Heartline 0934 862 080</footer>
+
+<script>
+(function(){
+  var API = "https://script.google.com/macros/s/AKfycbxumFFT0BmVrmqTNlg3C2bYLJj7G0Zjxx1ORN-HtCO_6fPOYU0IRYd0r0HhmdVuKmQ/exec";
+  var frm = document.getElementById("frm");
+  var btn = document.getElementById("sendBtn");
+  var formErr = document.getElementById("formErr");
+  try { var ai = new URLSearchParams(location.search).get("ai"); if (ai) document.getElementById("inviter").value = ai.slice(0,80); } catch (e) {}
+
+  function vals(name){ return Array.prototype.map.call(frm.querySelectorAll('input[name="'+name+'"]:checked'), function(i){ return i.value; }); }
+  function val(id){ return (document.getElementById(id).value || "").trim(); }
+  function setErr(el, msg){
+    var box = el.closest(".f"); var e = box.querySelector(".err");
+    if (!msg) { if (e) e.remove(); return; }
+    if (!e) { e = document.createElement("div"); e.className = "err"; box.appendChild(e); }
+    e.textContent = msg;
+  }
+
+  var over7 = frm.querySelectorAll('input[name="over7"]');
+  function syncKid(){
+    var v = vals("over7")[0];
+    if (v === "Không") { frm.querySelector('input[name="kidAgree"][value="Nhà không có bé từ 7 tuổi"]').checked = true; }
+  }
+  Array.prototype.forEach.call(over7, function(i){ i.addEventListener("change", syncKid); });
+
+  function collect(){
+    return {
+      name: val("name"), relation: vals("relation").join(""), phone: val("phone").replace(/\D/g,""),
+      email: val("email"), who: vals("who").join("; "), inviter: val("inviter"), ctv: val("ctv"),
+      kids: vals("kids").join(""), ages: vals("ages").join("; "), over7: vals("over7").join(""),
+      played: vals("played").join(""), device: vals("device").join(""), where: vals("where").join("; "),
+      profile: val("profile"), format: vals("format").join(""), time: vals("time").join(""),
+      commit: vals("commit").join(""), level: vals("level").join(""), ads: vals("ads").join(""),
+      kidAgree: vals("kidAgree").join(""), signer: val("signer"), privacy: vals("privacy").join("")
+    };
+  }
+
+  function validate(d){
+    var first = null, bad = function(el, msg){ setErr(el, msg); if (!first) first = el; };
+    Array.prototype.forEach.call(frm.querySelectorAll(".err"), function(e){ e.remove(); });
+    if (d.name.length < 2) bad(document.getElementById("name"), "Nhà mình điền họ tên giúp nhé.");
+    if (!/^0\d{9}$/.test(d.phone)) bad(document.getElementById("phone"), "Số điện thoại gồm 10 số, bắt đầu bằng 0.");
+    if (d.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email)) bad(document.getElementById("email"), "Email chưa đúng.");
+    if (!/^https?:\/\/\S+\.\S+/.test(d.profile)) bad(document.getElementById("profile"), "Dán link trang cá nhân, bắt đầu bằng https://");
+    if (d.signer.length < 2) bad(document.getElementById("signer"), "Gõ lại họ tên người đồng ý.");
+    [["relation","Chọn quan hệ với bé."],["who","Chọn ít nhất một ô."],["kids","Chọn số bé."],["ages","Chọn nhóm tuổi của bé."],["over7","Chọn có hoặc không."],["played","Chọn một ô."],["device","Chọn một ô."],["where","Chọn ít nhất một nơi đăng."],["format","Chọn cách chia sẻ."],["time","Chọn giờ chơi."],["commit","Cần đồng ý cam kết để tham gia."],["level","Chọn mức đồng ý."],["ads","Chọn có hoặc không."],["kidAgree","Chọn một ô."],["privacy","Cần đồng ý lưu thông tin để tham gia."]]
+      .forEach(function(r){ if (!d[r[0]]) bad(frm.querySelector('input[name="'+r[0]+'"]'), r[1]); });
+    if (d.over7 === "Có" && d.kidAgree === "Nhà không có bé từ 7 tuổi") bad(frm.querySelector('input[name="kidAgree"]'), "Nhà mình có bé từ 7 tuổi, chọn lại ô này giúp nhé.");
+    if (d.kidAgree === "Bé chưa đồng ý, nhà dùng mức A" && d.level !== "Mức A") bad(frm.querySelector('input[name="level"]'), "Bé chưa đồng ý thì nhà mình chọn mức A nhé.");
+    if (first) { first.closest(".f").scrollIntoView({behavior:"smooth", block:"center"}); return false; }
+    return true;
+  }
+
+  function finish(msg){
+    frm.hidden = true;
+    if (msg) document.getElementById("doneMsg").textContent = msg;
+    document.getElementById("done").hidden = false;
+    document.getElementById("done").scrollIntoView({behavior:"smooth", block:"start"});
+  }
+
+  frm.addEventListener("submit", function(ev){
+    ev.preventDefault();
+    formErr.hidden = true;
+    var d = collect();
+    if (!validate(d)) return;
+    btn.disabled = true; btn.textContent = "Đang gửi...";
+    function fail(msg){
+      btn.disabled = false; btn.textContent = "Gửi đăng ký";
+      formErr.textContent = "Chưa gửi được: " + (msg || "lỗi kết nối") + ". Nhà mình thử lại, hoặc nhắn Zalo Heartline 0934 862 080.";
+      formErr.hidden = false;
+    }
+    fetch(API, {method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"}, body: JSON.stringify(d)})
+      .then(function(res){ return res.json(); })
+      .then(function(r){
+        if (!r || !r.ok) { fail(r && r.error); return; }
+        if (r.duplicate) finish("Số điện thoại này đã đăng ký trước đó, Siêu thị đã cập nhật thông tin mới nhất của nhà mình. Chị Hường sẽ nhắn Zalo trong 24 giờ.");
+        else finish();
+      })
+      .catch(function(){ fail(); });
+  });
+})();
+</script>
+
+</body>
+</html>
