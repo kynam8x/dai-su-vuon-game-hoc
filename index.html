@@ -61,6 +61,16 @@ button.send:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
 .formerr{color:var(--err);font-weight:600;text-align:center;margin:10px 0 0}
 .done{background:var(--card);border:2px solid var(--leaf);border-radius:14px;padding:22px 20px;text-align:center}
 .done h2{font-family:var(--display);font-weight:400;color:var(--leaf);font-size:26px;margin:0 0 8px}
+section.why{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--sun);border-radius:14px;padding:18px 18px 16px}
+.why h2{font-family:var(--display);font-weight:400;font-size:22px;line-height:1.25;color:var(--leaf);margin:0 0 10px;text-wrap:balance}
+.why h3{font-size:16px;margin:16px 0 8px}
+.why p{margin:0;font-size:15px}
+.why ol{margin:0;padding:0;list-style:none;display:grid;gap:8px;counter-reset:n}
+.why li{counter-increment:n;position:relative;padding:10px 12px 10px 46px;background:var(--bg);border:1px solid var(--line);border-radius:10px;font-size:15px}
+.why li::before{content:counter(n);position:absolute;left:12px;top:10px;width:24px;height:24px;border-radius:50%;background:var(--leaf);color:#fff;font-size:13px;font-weight:700;display:grid;place-items:center}
+.why ol.steps li::before{background:var(--sun);color:#1b2a16}
+.why a.zalo{margin:14px 0 8px;text-align:center}
+a.tofrm{display:block;text-align:center;font-weight:600;color:var(--leaf);font-size:15px;padding:6px}
 .done .next{margin:14px 0 12px}
 a.zalo{display:block;font-weight:700;font-size:17px;padding:14px;border-radius:12px;background:#0068FF;color:#fff;text-decoration:none;margin:0 0 14px}
 a.zalo:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
@@ -82,6 +92,27 @@ footer{font-size:13px;color:var(--muted);padding-bottom:28px;text-align:center}
 </div></header>
 
 <main class="wrap" id="app">
+<section class="why" id="why">
+  <h2>Vì sao nhà mình nên làm Đại sứ Vườn Game-học</h2>
+  <p>Nếu con hoặc cháu đang mê game giải trí, chắc nhà mình cũng từng lo: con chơi game có hợp tuổi không, chơi rồi có dứt ra được không, sao dạo này con ít kể chuyện với ba mẹ. Đại sứ Vườn Game-học mỗi tối ngồi cạnh con 15 phút, chơi một game-học miễn phí do chính ba mẹ chọn theo tuổi con.</p>
+  <h3>Nhà mình nhận được</h3>
+  <ol class="gain">
+    <li><b>Biết rõ con đang chơi gì.</b> Game-học chọn theo tuổi, không thắng thua, không xếp hạng, không trừ điểm, để ba mẹ yên tâm hơn khi con cầm máy.</li>
+    <li><b>Mười lăm phút có giờ bên con.</b> Tiến độ được lưu để mai chơi tiếp, để cả nhà tập nhịp chơi có giờ, dừng được.</li>
+    <li><b>Một câu chuyện mỗi tối.</b> Sau mỗi bài, con kể cho ba mẹ điều con vừa học, để hiểu con hơn và nhận ra điểm mạnh của con.</li>
+    <li><b>Cả nhà học thêm qua chơi.</b> Trí nhớ, thiên nhiên, biết ơn, chia sẻ cùng Hũ Yêu thương.</li>
+    <li><b>Có nhóm ba mẹ cùng giá trị đồng hành.</b> Cùng đăng bài, ghé thăm và tương tác với nhau, để không ai phải đi một mình.</li>
+  </ol>
+  <h3>Ba việc trước tối thứ Hai 30/11</h3>
+  <ol class="steps">
+    <li>Điền form ngay bên dưới.</li>
+    <li>Vào nhóm Zalo Đại sứ để nhận hướng dẫn mỗi ngày.</li>
+    <li>Ngồi chơi cùng con 15 phút buổi đầu tiên, rồi nhắn "Xong bước" vào nhóm.</li>
+  </ol>
+  <a class="zalo" href="https://zalo.me/g/c9o7prblxyxw2zhicei5" target="_blank" rel="noopener">Vào nhóm Zalo Đại sứ</a>
+  <a class="tofrm" href="#frm">Điền form đăng ký ↓</a>
+</section>
+
 <form id="frm" novalidate>
 <input type="hidden" id="inviter" name="inviter">
 
@@ -185,6 +216,7 @@ footer{font-size:13px;color:var(--muted);padding-bottom:28px;text-align:center}
 
   function finish(msg){
     frm.hidden = true;
+    document.getElementById("why").hidden = true;
     if (msg) document.getElementById("doneMsg").textContent = msg;
     document.getElementById("done").hidden = false;
     document.getElementById("done").scrollIntoView({behavior:"smooth", block:"start"});
