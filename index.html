@@ -61,6 +61,10 @@ button.send:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
 .formerr{color:var(--err);font-weight:600;text-align:center;margin:10px 0 0}
 .done{background:var(--card);border:2px solid var(--leaf);border-radius:14px;padding:22px 20px;text-align:center}
 .done h2{font-family:var(--display);font-weight:400;color:var(--leaf);font-size:26px;margin:0 0 8px}
+.done .next{margin:14px 0 12px}
+a.zalo{display:block;font-weight:700;font-size:17px;padding:14px;border-radius:12px;background:#0068FF;color:#fff;text-decoration:none;margin:0 0 14px}
+a.zalo:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.done .small{font-size:14px;color:var(--muted);margin:6px 0}
 .guide{background:var(--card);border:1px dashed var(--muted);border-radius:14px;padding:16px 18px;font-size:14px}
 .guide h2{font-size:17px;margin:0 0 8px}
 .guide code{font-size:.9em;background:var(--leaf-soft);padding:1px 5px;border-radius:4px;word-break:break-all}
@@ -120,9 +124,11 @@ footer{font-size:13px;color:var(--muted);padding-bottom:28px;text-align:center}
 
 <div class="done" id="done" hidden>
   <h2>Cảm ơn nhà mình!</h2>
-  <p id="doneMsg">Siêu thị Vietwise đã nhận đăng ký. Chị Hường sẽ nhắn Zalo mời nhà mình vào nhóm đại sứ trong 24 giờ.</p>
-  <p>Trong lúc chờ, nhà mình có thể cùng con chơi thử một game miễn phí trên vietwise.edu.vn.</p>
-  <p>Cần hỏi gì, gọi hoặc nhắn Zalo Heartline 0934 862 080.</p>
+  <p id="doneMsg">Siêu thị Vietwise đã nhận đăng ký của nhà mình.</p>
+  <p class="next"><b>Bước tiếp theo:</b> nhà mình bấm vào nhóm Zalo Đại sứ để nhận hướng dẫn mỗi ngày.</p>
+  <a class="zalo" href="https://zalo.me/g/c9o7prblxyxw2zhicei5" target="_blank" rel="noopener">Vào nhóm Zalo Đại sứ</a>
+  <p class="small">Trước tối thứ Hai 30/11: ngồi chơi cùng con 15 phút buổi đầu tiên, rồi nhắn "Xong bước" vào nhóm.</p>
+  <p class="small">Cần hỏi gì, gọi hoặc nhắn Zalo Heartline 0934 862 080.</p>
 </div>
 
 <div class="guide" id="setupGuide" hidden>
@@ -200,7 +206,7 @@ footer{font-size:13px;color:var(--muted);padding-bottom:28px;text-align:center}
       .then(function(res){ return res.json(); })
       .then(function(r){
         if (!r || !r.ok) { fail(r && r.error); return; }
-        if (r.duplicate) finish("Số điện thoại này đã đăng ký trước đó, Siêu thị đã cập nhật thông tin mới nhất của nhà mình. Chị Hường sẽ nhắn Zalo trong 24 giờ.");
+        if (r.duplicate) finish("Số điện thoại này đã đăng ký trước đó, Siêu thị đã cập nhật thông tin mới nhất của nhà mình.");
         else finish();
       })
       .catch(function(){ fail(); });
