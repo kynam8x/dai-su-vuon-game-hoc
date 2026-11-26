@@ -70,6 +70,11 @@ section.why{background:var(--card);border:1px solid var(--line);border-top:5px s
 .why li::before{content:counter(n);position:absolute;left:12px;top:10px;width:24px;height:24px;border-radius:50%;background:var(--leaf);color:#fff;font-size:13px;font-weight:700;display:grid;place-items:center}
 .why ol.steps li::before{background:var(--sun);color:#1b2a16}
 .why a.zalo{margin:14px 0 8px;text-align:center}
+a.fb{display:block;text-align:center;font-weight:700;font-size:16px;padding:12px;border-radius:12px;border:2px solid #1877F2;color:#1877F2;background:transparent;text-decoration:none;margin:0 0 12px}
+a.fb:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.why li a,.done .small a{color:var(--leaf);font-weight:600}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) a.fb{color:#6aa8ff;border-color:#6aa8ff}}
+:root[data-theme="dark"] a.fb{color:#6aa8ff;border-color:#6aa8ff}
 a.tofrm{display:block;text-align:center;font-weight:600;color:var(--leaf);font-size:15px;padding:6px}
 .done .next{margin:14px 0 12px}
 a.zalo{display:block;font-weight:700;font-size:17px;padding:14px;border-radius:12px;background:#0068FF;color:#fff;text-decoration:none;margin:0 0 14px}
@@ -101,15 +106,17 @@ footer{font-size:13px;color:var(--muted);padding-bottom:28px;text-align:center}
     <li><b>Mười lăm phút có giờ bên con.</b> Tiến độ được lưu để mai chơi tiếp, để cả nhà tập nhịp chơi có giờ, dừng được.</li>
     <li><b>Một câu chuyện mỗi tối.</b> Sau mỗi bài, con kể cho ba mẹ điều con vừa học, để hiểu con hơn và nhận ra điểm mạnh của con.</li>
     <li><b>Cả nhà học thêm giá trị sống qua chơi game-học.</b> Trí nhớ, thiên nhiên, biết ơn, chia sẻ cùng Hũ Yêu thương.</li>
-    <li><b>Có nhóm ba mẹ cùng giá trị đồng hành.</b> Cùng đăng bài, ghé thăm và tương tác với nhau, để không ai phải đi một mình.</li>
+    <li><b>Có nhóm ba mẹ cùng giá trị đồng hành.</b> Cùng đăng video ngắn mỗi ngày, ghé thăm và tương tác với nhau, để không ai phải đi một mình.</li>
   </ol>
-  <h3>Ba việc trước tối thứ Hai 30/11</h3>
+  <h3>Bốn việc trước tối thứ Hai 30/11</h3>
   <ol class="steps">
     <li>Điền form ngay bên dưới.</li>
-    <li>Vào nhóm Zalo Đại sứ để nhận hướng dẫn mỗi ngày.</li>
-    <li>Ngồi chơi cùng con 15 phút buổi đầu tiên, rồi nhắn "Xong bước" vào nhóm.</li>
+    <li>Vào <a href="https://zalo.me/g/c9o7prblxyxw2zhicei5" target="_blank" rel="noopener">nhóm Zalo Đại sứ</a> để nhận hướng dẫn mỗi ngày.</li>
+    <li>Tham gia <a href="https://www.facebook.com/vuongamehoc" target="_blank" rel="noopener">group Facebook Vườn Game-học</a>.</li>
+    <li>Đọc <a href="https://vietwise.edu.vn/p/vong-quay-may-man" target="_blank" rel="noopener">hướng dẫn cho người đồng hành</a>, ngồi chơi cùng con 15 phút buổi đầu tiên, rồi nhắn "Xong bước" vào nhóm.</li>
   </ol>
   <a class="zalo" href="https://zalo.me/g/c9o7prblxyxw2zhicei5" target="_blank" rel="noopener">Vào nhóm Zalo Đại sứ</a>
+  <a class="fb" href="https://www.facebook.com/vuongamehoc" target="_blank" rel="noopener">Tham gia group Facebook Vườn Game-học</a>
   <a class="tofrm" href="#frm">Điền form đăng ký ↓</a>
 </section>
 
@@ -120,7 +127,7 @@ footer{font-size:13px;color:var(--muted);padding-bottom:28px;text-align:center}
   <div class="f"><label for="name">Họ tên bố hoặc mẹ <span class="req">*</span></label><input type="text" id="name" name="name" autocomplete="name" maxlength="80" required></div>
   <div class="f"><label for="phone">Số điện thoại có Zalo <span class="req">*</span></label><p class="hint">Để Siêu thị mời nhà mình vào nhóm Zalo đại sứ.</p><input type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel" maxlength="12" placeholder="09xx xxx xxx" required></div>
   <div class="f"><label for="email">Email <span class="req">*</span></label><input type="email" id="email" name="email" autocomplete="email" maxlength="100" required></div>
-  <div class="f"><label for="profile">Link trang cá nhân nhà mình sẽ đăng video <span class="req">*</span></label><p class="hint">Facebook, TikTok hoặc trang khác. Để Siêu thị xem được bài; bài cần để chế độ công khai.</p><input type="url" id="profile" name="profile" inputmode="url" maxlength="200" placeholder="https://www.facebook.com/..." required></div>
+  <div class="f"><label for="profile">Link trang cá nhân nhà mình sẽ đăng video <span class="req">*</span></label><p class="hint">Facebook, TikTok hoặc trang khác. Để Siêu thị xem được video; video cần để chế độ công khai.</p><input type="url" id="profile" name="profile" inputmode="url" maxlength="200" placeholder="https://www.facebook.com/..." required></div>
   <div class="f"><label for="ctv">Mã cộng tác viên (nếu có)</label><input type="text" id="ctv" name="ctv" maxlength="20"></div>
   <div class="f"><div class="q">Nhà mình là <span class="req">*</span></div><p class="hint">Chọn được nhiều ô.</p><div class="opts">
     <label class="opt"><input type="checkbox" name="who" value="Cộng tác viên Siêu thị Vietwise">Cộng tác viên Siêu thị Vietwise</label>
@@ -141,7 +148,7 @@ footer{font-size:13px;color:var(--muted);padding-bottom:28px;text-align:center}
       <li><b>Dùng video nào:</b> video, hình ảnh nhà mình đăng trong chương trình Đại sứ Vườn Game-học Vietwise 2026.</li>
       <li><b>Dùng để:</b> truyền thông cho chương trình và cho Vườn Game-học: đăng lại, chia sẻ trên Fanpage, Group, Zalo, website của Siêu thị Vietwise và Vườn Game-học; cắt thành video ngắn.</li>
       <li><b>Không dùng để:</b> ghi họ tên đầy đủ, trường học, địa chỉ của con; bán hoặc đưa video cho bên khác; sửa lời con nói thành lời khác.</li>
-      <li><b>Thời hạn:</b> đến hết 31/12/2027. Nhà mình rút đồng ý bất cứ lúc nào bằng cách nhắn Heartline 0934 862 080; Siêu thị gỡ bài đã đăng lại trong 3 ngày làm việc.</li>
+      <li><b>Thời hạn:</b> đến hết 31/12/2027. Nhà mình rút đồng ý bất cứ lúc nào bằng cách nhắn Heartline 0934 862 080; Siêu thị gỡ video đã đăng lại trong 3 ngày làm việc.</li>
       <li><b>Con từ 7 tuổi:</b> bố mẹ đọc cho con nghe và con đồng ý thì mới đăng video có con.</li>
     </ul>
   </details>
@@ -158,6 +165,8 @@ footer{font-size:13px;color:var(--muted);padding-bottom:28px;text-align:center}
   <p id="doneMsg">Siêu thị Vietwise đã nhận đăng ký của nhà mình.</p>
   <p class="next"><b>Bước tiếp theo:</b> nhà mình bấm vào nhóm Zalo Đại sứ để nhận hướng dẫn mỗi ngày.</p>
   <a class="zalo" href="https://zalo.me/g/c9o7prblxyxw2zhicei5" target="_blank" rel="noopener">Vào nhóm Zalo Đại sứ</a>
+  <a class="fb" href="https://www.facebook.com/vuongamehoc" target="_blank" rel="noopener">Tham gia group Facebook Vườn Game-học</a>
+  <p class="small"><a href="https://vietwise.edu.vn/p/vong-quay-may-man" target="_blank" rel="noopener">Hướng dẫn cho bố mẹ, người đồng hành</a></p>
   <p class="small">Trước tối thứ Hai 30/11: ngồi chơi cùng con 15 phút buổi đầu tiên, rồi nhắn "Xong bước" vào nhóm.</p>
   <p class="small">Cần hỏi gì, gọi hoặc nhắn Zalo Heartline 0934 862 080.</p>
 </div>
